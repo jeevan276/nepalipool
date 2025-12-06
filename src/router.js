@@ -8,6 +8,8 @@ import DefaultLayout from "./layouts/DefaultLayout.vue";
 import NotFoundPage from "./Pages/NotFoundPage.vue";
 import LoginFormPage from "./layouts/LoginFormPage.vue";
 import RegisterPage from "./layouts/RegisterPage.vue";
+import FrequentlyAskedQuestion from "./components/LandingPages/FrequentlyAskedQuestion.vue";
+import SupportPage from "./layouts/SupportPage.vue";
 
 const routes = [
   {
@@ -19,10 +21,12 @@ const routes = [
       { path: "mentors", component: MentorsPage },
       { path: "scholarships", component: ScholarshipsPage },
       { path: "guides", component: GuidesPage },
+      { path: "faq", component: FrequentlyAskedQuestion },
     ],
   },
   { path: "/login", component: LoginFormPage },
   { path: "/register", component: RegisterPage },
+  { path: "/support", component: SupportPage },
   { path: "/:pathMatch(.*)*", component: NotFoundPage },
 ];
 

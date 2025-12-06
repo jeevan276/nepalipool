@@ -2,6 +2,9 @@
 import HeroSection from "./HeroSection.vue";
 import HowItWorks from "./HowItWorks.vue";
 import ParentWhatWeOffer from "../CardData/ParentWhatWeOffer.vue";
+import WhyTrustUs from "./WhyTrustUs.vue";
+import Testimonials from "./Testimonials.vue";
+import FrequentlyAskedQuestion from "./FrequentlyAskedQuestion.vue";
 
 export default {
   name: "HomePage",
@@ -9,6 +12,9 @@ export default {
     HeroSection,
     HowItWorks,
     ParentWhatWeOffer,
+    WhyTrustUs,
+    Testimonials,
+    FrequentlyAskedQuestion,
   },
 };
 </script>
@@ -17,8 +23,10 @@ export default {
     <HeroSection />
     <HowItWorks />
     <ParentWhatWeOffer />
-    <br />
-    <br />
-    <br />
+    <div class="flex flex-wrap justify-center lg:flex-nowrap">
+      <WhyTrustUs />
+      <Testimonials />
+    </div>
+    <FrequentlyAskedQuestion />
   </div>
 </template>
