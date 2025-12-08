@@ -15,7 +15,7 @@ export default {
 
 <template>
   <NavPage />
-  <RouterView />
+  <RouterView class="pt-20" />
   <FooterPage />
 </template>
 

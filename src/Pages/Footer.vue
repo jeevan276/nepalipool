@@ -14,7 +14,7 @@ export default {
 };
 </script>
 <template>
-  <footer class="border border-neutral-300">
+  <footer class="border border-neutral-300 text-neutral-800">
     <section
       class="flex flex-col md:flex-row md:justify-around md:items-start p-4 gap-6"
     >

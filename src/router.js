@@ -10,6 +10,7 @@ import LoginFormPage from "./layouts/LoginFormPage.vue";
 import RegisterPage from "./layouts/RegisterPage.vue";
 import FrequentlyAskedQuestion from "./components/LandingPages/FrequentlyAskedQuestion.vue";
 import SupportPage from "./layouts/SupportPage.vue";
+import Form from "./layouts/Form.vue";
 
 const routes = [
   {
@@ -22,12 +23,13 @@ const routes = [
       { path: "scholarships", component: ScholarshipsPage },
       { path: "guides", component: GuidesPage },
       { path: "faq", component: FrequentlyAskedQuestion },
+      { path: "/form", component: Form },
+      { path: "/:pathMatch(.*)*", component: NotFoundPage },
     ],
   },
   { path: "/login", component: LoginFormPage },
   { path: "/register", component: RegisterPage },
   { path: "/support", component: SupportPage },
-  { path: "/:pathMatch(.*)*", component: NotFoundPage },
 ];
 
 const router = createRouter({

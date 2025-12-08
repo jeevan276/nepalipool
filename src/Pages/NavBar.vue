@@ -21,7 +21,9 @@ export default {
 };
 </script>
 <template>
-  <header class="shadow-md px-10 lg:py-4 py-1">
+  <header
+    class="fixed w-full shadow-md px-5 md:px-10 lg:py-4 py-1 bg-white z-50"
+  >
     <nav class="hidden lg:flex items-center justify-between">
       <RouterLink to="/" class="flex items-center gap-3">
         <img
@@ -86,6 +88,17 @@ export default {
           "
         >
           Guides
+        </RouterLink>
+        <RouterLink
+          to="/form"
+          class="px-3 py-1 hover:text-green-600 hover:rounded-md"
+          :class="
+            $route.path === '/form'
+              ? 'text-green-600 bg-green-50 rounded-md'
+              : 'text-black'
+          "
+        >
+          Form
         </RouterLink>
       </div>
       <div class="flex items-center gap-3">
@@ -210,6 +223,18 @@ export default {
               @click="toggleSideBar"
             >
               Guides
+            </RouterLink>
+            <RouterLink
+              to="/form"
+              class="px-3 py-2 rounded-md hover:bg-green-50"
+              :class="
+                $route.path === '/form'
+                  ? 'text-green-600 bg-green-50'
+                  : 'text-black'
+              "
+              @click="toggleSideBar"
+            >
+              Form
             </RouterLink>
           </div>
 
