@@ -1,8 +1,13 @@
 <script>
+import Hero from "./Hero.vue";
+
 export default {
   name: "SchoolsPage",
+  components: {
+    Hero,
+  },
 };
 </script>
 <template>
-  <h1>This is the Schools Page</h1>
+  <Hero />
 </template>

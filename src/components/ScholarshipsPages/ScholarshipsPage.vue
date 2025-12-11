@@ -1,8 +1,18 @@
 <script>
+import ParentWhatWeOffer from "../CardData/ParentWhatWeOffer.vue";
+import HeroPage from "./HeroPage.vue";
+
 export default {
   name: "ScholarshipsPage",
+  components: {
+    ParentWhatWeOffer,
+    HeroPage,
+  },
 };
 </script>
 <template>
-  <h1>This is the Scholarships Page</h1>
+  <div class="pt-30 p-10">
+    <HeroPage />
+    <ParentWhatWeOffer />
+  </div>
 </template>

@@ -1,8 +1,15 @@
 <script>
+import HeroPage from "./HeroPage.vue";
+
 export default {
   name: "MentorsPage",
+  components: {
+    HeroPage,
+  },
 };
 </script>
 <template>
-  <h1>This is the Mentors Page</h1>
+  <div class="pt-30">
+    <HeroPage />
+  </div>
 </template>

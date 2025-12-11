@@ -24,6 +24,7 @@ const routes = [
       { path: "guides", component: GuidesPage },
       { path: "faq", component: FrequentlyAskedQuestion },
       { path: "/form", component: Form },
+
       { path: "/:pathMatch(.*)*", component: NotFoundPage },
     ],
   },
