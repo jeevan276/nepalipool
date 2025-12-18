@@ -38,6 +38,7 @@ export default {
       type="search"
       name="search"
       id="search"
+      placeholder="Search for schools..."
       class="outline-none"
       v-model="searchSchool"
     />
