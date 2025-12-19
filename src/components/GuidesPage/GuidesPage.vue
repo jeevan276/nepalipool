@@ -1,8 +1,13 @@
 <script>
+import HeroPage from "./HeroPage.vue";
+
 export default {
   name: "GuidesPage",
+  components: {
+    HeroPage,
+  },
 };
 </script>
 <template>
-  <h1>This is the Guides Page</h1>
+  <HeroPage />
 </template>
